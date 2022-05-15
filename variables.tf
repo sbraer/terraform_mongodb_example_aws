@@ -11,7 +11,7 @@ variable "namespace_name" {
 }
 
 variable "vpc_name" {
-  description = "VPN name"
+  description = "VPC name"
   type        = string
   default     = "AZ-vpc"
 }
