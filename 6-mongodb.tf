@@ -50,6 +50,21 @@ resource "helm_release" "mongodb1" {
     value = 3
   }
 
+  set {
+    name = "nodeAffinityPreset.type"
+    value = "hard"
+  }
+  
+  set {
+    name = "nodeAffinityPreset.key"
+    value = "role"
+  }
+
+  set {
+    name = "nodeAffinityPreset.values[0]"
+    value = "mongodb"
+  }
+
   depends_on = [
     random_password.password,
     kubernetes_secret.credentials1,

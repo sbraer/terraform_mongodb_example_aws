@@ -17,7 +17,7 @@ resource "kubernetes_deployment" "showdb" {
           app = "showdb" 
         } 
         annotations = { 
-          custom_test = "Ecco il mio testo casuale"
+          custom_text = "Ecco il mio testo casuale"
         } 
       } 
       spec {

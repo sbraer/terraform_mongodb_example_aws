@@ -17,7 +17,7 @@ resource "kubernetes_deployment" "testdb" {
           app = "testdb" 
         } 
         annotations = { 
-          custom_test = "Ecco il mio testo casuale per il secondo deployment"
+          custom_text = "Ecco il mio testo casuale per il secondo deployment"
         } 
       } 
       spec { 
